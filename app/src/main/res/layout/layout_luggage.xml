@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:tag="luggage_weight_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="23"
+        android:hint="行李1重"/>
+
+
+    <EditText
+        android:tag="luggage_length_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="行李1长"
+        android:text="20"/>
+
+    <EditText
+        android:tag="luggage_width_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="行李1宽"
+        android:text="20"/>
+
+    <EditText
+        android:tag="luggage_height_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="行李1高"
+        android:text="20"/>
+
+
+
+</LinearLayout>

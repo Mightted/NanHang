@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mightted.nanhangluggage.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Spinner
+            android:id="@+id/choose_type_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:entries="@array/area_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="乘客类型:" />
+
+        <Spinner
+            android:id="@+id/passenger_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/passenger"></Spinner>
+
+    </LinearLayout>
+    
+
+
+    
+    <LinearLayout
+        android:id="@+id/layout_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/src_text"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="始发地:"/>
+            <Spinner
+                android:id="@+id/src_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/area"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dst_text"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="始发地:"/>
+            <Spinner
+                android:id="@+id/dst_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/area"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/space_type_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:tag="space_type_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:tag="space_text"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="选择舱位:"/>
+            <Spinner
+                android:tag="space_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/space_type1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="space_type_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+            <TextView
+                android:tag="space_text"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="选择舱位:"/>
+            <Spinner
+                android:tag="space_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/space_type2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/show_luggage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加行李"
+            android:onClick="addLuggage"/>
+        <Button
+            android:id="@+id/remove_button"
+            android:text="删除行李"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeLug"/>
+        <Button
+            android:id="@+id/check_cost_button"
+            android:text="计算费用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkCost"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="行李费用为:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/show_cost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    
+
+
+
+</LinearLayout>

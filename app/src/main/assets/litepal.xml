@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="LuggageData" ></dbname>
+    <version value="2" ></version>
+
+    <list>
+        <mapping class="com.mightted.nanhangluggage.luggage.Luggage"></mapping>
+        <mapping class="com.mightted.nanhangluggage.luggage.CostType"></mapping>
+    </list>
+</litepal>

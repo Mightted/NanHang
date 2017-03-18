@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="passenger" >
+        <item>成人、儿童、占座婴儿</item>
+        <item>不占座婴儿</item>
+    </string-array>
+    <string-array name="area">
+        <item>国内航班(全国或非特殊地域)</item>
+        <item>国内航班(限兰州/乌鲁木齐)</item>
+        <item>日本、美洲、澳新、俄罗斯、迪拜</item>
+        <item>新加坡</item>
+        <item>中西亚地区</item>
+        <item>内罗毕</item>
+        <item>韩国</item>
+        <item>迪拜</item>
+        <item>美国</item>
+        <item>其他地区</item>
+    </string-array>
+
+    <string-array name="area_type">
+        <item>国内航班</item>
+        <item>国际航班</item>
+    </string-array>
+
+    <string-array name="space_type1">
+        <item>头等舱</item>
+        <item>公务舱</item>
+        <item>经济舱</item>
+    </string-array>
+
+    <string-array name="space_type2">
+        <item>头等舱</item>
+        <item>公务舱</item>
+        <item>明珠经济舱</item>
+        <item>经济舱</item>
+    </string-array>
+</resources>
